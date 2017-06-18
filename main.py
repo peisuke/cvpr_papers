@@ -67,9 +67,6 @@ for i, d in enumerate(data):
     d['link'] = ret['link']
     d['abstract'] = ret['abstract']
     time.sleep(1)
-    
-    if i > 5:
-        break
 
 with open('cvpr.json', 'w') as f:
     json.dump(data, f)
